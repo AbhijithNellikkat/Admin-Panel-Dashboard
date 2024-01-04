@@ -1,3 +1,4 @@
+import 'package:dashboard/constants.dart';
 import 'package:dashboard/widget_tree.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Admin Panel Dashboard',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
+        drawerTheme: const DrawerThemeData(backgroundColor: Constants.purpleDark),
+        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Constants.purpleDark,
+        canvasColor: Constants.purpleLight,
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
